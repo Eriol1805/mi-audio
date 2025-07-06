@@ -3,13 +3,45 @@
 <head>
   <meta charset="UTF-8">
   <title>Reproducción de audio</title>
+  <style>
+    body {
+      text-align: center;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      padding-top: 100px;
+      background-color: white;
+      color: #333;
+    }
+
+    h2 {
+      margin: 10px 0;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      border: none;
+      border-radius: 8px;
+      background-color: #0078D4;
+      color: white;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #005a9e;
+    }
+
+    audio {
+      margin-top: 30px;
+    }
+  </style>
 </head>
-<body style="text-align:center; font-family:sans-serif; padding-top: 100px;">
-  <h2>🎶 Escucha esta melodia mientras tanto:</h2><br>
+<body>
+  <h2>🎶 Escucha esta melodía mientras tanto:</h2>
   <h2>Photograph - Ed Sheeran</h2>
   <button onclick="document.getElementById('audio').play()">▶ Reproducir</button>
   <br><br>
-  <audio id="audio" controls loop>
+  <audio id="audio" controls loop autoplay>
     <source src="Photograph.mp3" type="audio/mpeg">
     Tu navegador no soporta el audio.
   </audio>
