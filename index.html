@@ -2,14 +2,16 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Reproducción automática de audio</title>
+  <title>Reproducción de audio</title>
 </head>
-<body style="text-align:center; margin-top: 50px; font-family: sans-serif;">
+<body style="text-align:center; font-family:sans-serif; padding-top: 100px;">
   <h2>🎶 Escucha esta melodia mientras tanto:</h2><br>
   <h2>Photograph</h2>
-  <audio autoplay controls loop>
+  <button onclick="document.getElementById('audio').play()">▶ Reproducir</button>
+  <br><br>
+  <audio id="audio" controls loop>
     <source src="Photograph.mp3" type="audio/mpeg">
-    Tu navegador no soporta el elemento de audio.
+    Tu navegador no soporta el audio.
   </audio>
 </body>
 </html>
