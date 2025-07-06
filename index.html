@@ -6,33 +6,24 @@
   <style>
     body {
       text-align: center;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-family: sans-serif;
       padding-top: 100px;
       background-color: white;
       color: #333;
+    }
+
+    button {
+      font-size: 18px;
+      padding: 10px 20px;
+      cursor: pointer;
     }
 
     h2 {
       margin: 10px 0;
     }
 
-    button {
-      padding: 10px 20px;
-      font-size: 16px;
-      border: none;
-      border-radius: 8px;
-      background-color: #0078D4;
-      color: white;
-      cursor: pointer;
-      transition: background-color 0.3s;
-    }
-
-    button:hover {
-      background-color: #005a9e;
-    }
-
     audio {
-      margin-top: 30px;
+      display: none; /* Oculta los controles si usás el botón personalizado */
     }
   </style>
 </head>
@@ -40,8 +31,8 @@
   <h2>🎶 Escucha esta melodía mientras tanto:</h2>
   <h2>Photograph - Ed Sheeran</h2>
   <button onclick="document.getElementById('audio').play()">▶ Reproducir</button>
-  <br><br>
-  <audio id="audio" controls loop autoplay>
+
+  <audio id="audio" loop>
     <source src="Photograph.mp3" type="audio/mpeg">
     Tu navegador no soporta el audio.
   </audio>
